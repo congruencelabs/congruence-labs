@@ -5,18 +5,20 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      position: 'absolute',
+      top: '0',
+      left: '0',
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: 'flex',
+        justifyContent: 'space-between'
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1>
         <Link
           to="/"
           style={{
@@ -27,16 +29,13 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <div style={{
+        display: 'flex',
+        alignItems: 'row'
+      }}>
+      </div>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
