@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header";
+import Img from "gatsby-image"
 
 const Hero = ({children}) => {
   const data = useStaticQuery(graphql`
@@ -8,23 +9,18 @@ const Hero = ({children}) => {
       heroImage: file(relativePath: {eq: "hero.jpg"}) {
         publicURL
       }
+      heroImageSharp: file(relativePath: {eq: "hero.jpg"}) {
+        childImageSharp {
+          fluid(maxWidth: 1280, maxHeight: 700) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
-  return <div 
-    style={{
-        alignItems: `center`,
-        background: `${data.heroImage.publicURL}`,
-        backgroundImage: `url(${data.heroImage.publicURL})`,
-        backgroundSize: `cover`,
-        color: `#ffffff`,
-        display: `flex`,
-        flexFlow: `column nowrap`,
-        justifyContent: `center`,
-        minHeight: `100vh`,
-        height: `100px`,
-        width: `100%`
-    }}>
+  return <div style={{width: '100%'}}>
+      <Img fluid={data.heroImageSharp.childImageSharp.fluid}/>
       {children}
     </div>
 }
