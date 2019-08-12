@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
           to="/"
           className="logo"
           style={{
-            color: `white`,
+            color: `#ded8d8`,
             textDecoration: `none`,
           }}
         >
