@@ -1,4 +1,4 @@
-import React from "react"
+import React , {Fragment}  from "react"
 import "./tech.css";
 
 import AkkaIcon from "../images/svg/akka.svg";
@@ -45,13 +45,18 @@ const SupportedTech = () => {
     <VueIcon width={100}/>,
   ];
   return (
-    <div className={'tech-container'}>
-      {icons.map(icon => (
-        <div className={'icon-container'}>
-          {icon}
-        </div>
-      ))}
-    </div>
+    <Fragment>
+      <h1 style={{textAlign:'center'}}>
+        Our Tech Stack
+      </h1>
+      <div className={'tech-container'}>
+        {icons.map(icon => (
+          <div className={'icon-container'}>
+            {icon}
+          </div>
+        ))}
+      </div>
+    </Fragment>  
   )
 }
 

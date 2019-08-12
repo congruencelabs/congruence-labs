@@ -9,3 +9,8 @@
 .web-technologies {
     margin: 0 auto;
 }
+
+a.logo {
+  text-shadow: none;
+  background-image: none;
+}
