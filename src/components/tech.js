@@ -5,6 +5,7 @@ import AkkaIcon from "../images/svg/akka.svg";
 import AngularIcon from "../images/svg/angular.svg";
 import AwsIcon from "../images/svg/aws.svg";
 import CassandraIcon from "../images/svg/cassandra.svg";
+import ElasticIcon from "../images/svg/elastic.svg";
 import GoIcon from "../images/svg/golang.svg";
 import GraphqlIcon from "../images/svg/graphql.svg";
 import JavaIcon from "../images/svg/java.svg";
@@ -23,6 +24,7 @@ const SupportedTech = () => {
     <JavaIcon width={100} height={100} style={{paddingLeft: '20px'}}/>,
     <AwsIcon width={100} height={100}/>,
     <CassandraIcon width={100} height={100}/>,
+    <ElasticIcon width={100} height={100}/>,
     <GraphqlIcon width={100} height={100}/>,
     <GoIcon width={120} height={100}/>,
     <NodejsIcon width={140} height={100} style={{
