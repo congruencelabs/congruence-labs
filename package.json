@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "gatsby-image": "^2.2.8",
+    "gatsby-plugin-react-svg": "^2.1.2",
     "gatsby-plugin-sharp": "^2.2.11",
     "gatsby-transformer-sharp": "^2.2.6",
     "prettier": "^1.18.2"
