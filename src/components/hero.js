@@ -27,6 +27,17 @@ const Hero = ({children}) => {
         opacity: '0.5',
         zIndex: '10',
       }}></div>
+      <h2 style={{
+        position: 'absolute',
+        top: '50%',
+        width: '100%',
+        height: '100%',
+        zIndex: '100',
+        textAlign: 'center',
+        color: '#ded8d8'
+      }}>
+      Helping you be Congruent in ideas and execution
+      </h2>
       <Img fluid={data.heroImageSharp.childImageSharp.fluid}/>
       {children}
     </div>
