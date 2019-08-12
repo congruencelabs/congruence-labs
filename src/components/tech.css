@@ -1,0 +1,15 @@
+.tech-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.tech-container .icon-container {
+  height: 150px;
+  width: 150px;
+  justify-content: center;
+  display: inline-flex;
+  margin: 0 20px 20px 20px;
+  align-items: center;
+}

@@ -1,5 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import "./tech.css";
+
 import AngularIcon from "../images/svg/icon-angular.inline.svg";
 import GraphqlIcon from "../images/svg/icon-graphql.inline.svg";
 import MongoIcon from "../images/svg/icon-mongo.inline.svg";
@@ -11,57 +12,26 @@ import AkkaIcon from "../images/svg/icon-akka.inline.svg";
 import K8SIcon from "../images/svg/icon-kubernetes.inline.svg";
 
 const SupportedTech = () => {
-    return (
-        <div className={'container'} style={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column"
-        }}>
-            <div className={"web-technologies"}>
-                <span style={{padding: '0 20px'}}>
-                    <AngularIcon width={100}/>    
-                </span>
-                <span style={{padding: '0 20px'}}>
-                    <GraphqlIcon width={100}/>  
-                </span>
-                <span style={{padding: '0 20px'}}>
-                    <NpmIcon width={100}/>    
-                </span>
-
-
-            <span style={{padding: '0 20px'}}>
-            <ReactIcon width={100}/>   
-            </span>
-
-            <span style={{padding: '0 20px'}}>
-            <K8SIcon width={100}/>   
-            </span>
-            </div>
-            <div className={"web-technologies"}>
-            <span style={{padding: '0 20px'}}>
-            <MongoIcon width={100}/>
-            </span>
-
-            <span style={{padding: '0 20px'}}>
-            <AkkaIcon width={100} height={100}/>  
-            </span>
-
-            <span style={{padding: '0 20px'}}>
-            <VueIcon width={100}/>   
-            </span>
-
-            <span style={{padding: '0 20px'}}>
-                <ScalaIcon width={160}/>
-            </span>
-            </div>
-
-            <div className={"web-technologies"}>
-            
-
-            
-            </div>
+  const icons = [
+    <VueIcon width={100}/>,
+    <AngularIcon width={100}/>,
+    <GraphqlIcon width={100}/>,
+    <NpmIcon width={100}/>,
+    <ReactIcon width={100}/>,
+    <K8SIcon width={150} height={80}/>,
+    <MongoIcon width={150}/>,
+    <AkkaIcon width={100} height={100}/>,
+    <ScalaIcon width={150}/>,
+  ];
+  return (
+    <div className={'tech-container'}>
+      {icons.map(icon => (
+        <div className={'icon-container'}>
+          {icon}
         </div>
-    )
+      ))}
+    </div>
+  )
 }
 
 export default SupportedTech;
