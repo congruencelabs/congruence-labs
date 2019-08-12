@@ -35,6 +35,12 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/logo.png`,
       },
+    },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      }
     }
   ],
 }
