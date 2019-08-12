@@ -14,6 +14,14 @@
   align-items: center;
 }
 
+.icon-container svg {
+  filter: grayscale(1)
+}
+
+.icon-container svg:hover {
+  filter: grayscale(0)
+}
+
 @media only screen and (max-width: 480px) {
   .tech-container .icon-container {
     height: 100px;
