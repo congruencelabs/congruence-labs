@@ -13,3 +13,10 @@
   margin: 0 20px 20px 20px;
   align-items: center;
 }
+
+@media only screen and (max-width: 480px) {
+  .tech-container .icon-container {
+    height: 100px;
+    width: 100px;
+  }
+}
