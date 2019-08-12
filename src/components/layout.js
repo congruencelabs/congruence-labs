@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "./global.css"
 import Hero from "./hero";
 
 const Layout = ({ children }) => {
@@ -37,8 +38,8 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
-        <footer>
+        <main className={'container'} >{children}</main>
+        <footer className={'container'}>
           © {new Date().getFullYear()}, Congruence Labs
         </footer>
       </div>

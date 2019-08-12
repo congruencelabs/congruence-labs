@@ -19,7 +19,7 @@ const Hero = ({children}) => {
     }
   `)
 
-  return <div style={{width: '100%'}}>
+  return <div style={{width: '100%', paddingBottom: '40px'}}>
       <Img fluid={data.heroImageSharp.childImageSharp.fluid}/>
       {children}
     </div>
